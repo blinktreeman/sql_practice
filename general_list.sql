@@ -1,22 +1,22 @@
 use gbsqlpractice;
 create table genlist (
-	genlist_id			int primary key not null auto_increment,
-    genlist_full_name	varchar(100),
-    genlist_birth_date	date,
-    genlist_status		bool,
-    genlist_phone		int,
-    genlist_comment		varchar(100),
-    genlist_address		varchar(100),
-    genlist_group		varchar(100)
+	genlist_id		int primary key not null auto_increment,
+	genlist_full_name	varchar(100),
+	genlist_birth_date	date,
+	genlist_status		bool,
+	genlist_phone		int,
+	genlist_comment		varchar(100),
+	genlist_address		varchar(100),
+	genlist_group		varchar(100)
 );
 insert gbsqlpractice.genlist (
 	genlist_full_name,
-    genlist_birth_date,
-    genlist_status,
-    genlist_phone,
-    genlist_comment,
-    genlist_address,
-    genlist_group
+	genlist_birth_date,
+	genlist_status,
+	genlist_phone,
+	genlist_comment,
+	genlist_address,
+	genlist_group
 )
 values
 ('Иванов И. И.', 19900212, true, 126, 'интернет', 'Можга', 'Работа'),
