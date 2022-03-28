@@ -11,19 +11,17 @@ create table gbsqlpractice.persons (
 );
 
 create table gbsqlpractice.addresses (
-	addresses_id			int not null primary key,
+	addresses_id			int not null primary key auto_increment,
     addresses_person_id		int,
     addresses_address		varchar(100),
-    addresses_comment		varchar(100),
-    foreign key (addresses_person_id) references gbsqlpractice.persons (persons_id) on delete set null
+    addresses_comment		varchar(100)
 );
   
 create table gbsqlpractice.phones (
-	phones_id			int not null primary key,
+	phones_id			int not null primary key auto_increment,
     phones_person_id	int,
     phones_phone		int,
-    phones_comment		varchar(100),
-    foreign key (phones_person_id) references gbsqlpractice.persons (persons_id) on delete set null
+    phones_comment		varchar(100)
 );
 
 -- Insert data
