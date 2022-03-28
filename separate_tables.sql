@@ -114,10 +114,10 @@ select * from gbsqlpractice.persons full join gbsqlpractice.addresses on address
 -- 1. SELECT ФИО, Тел, Коммент FROM Люди LEFT JOIN Телефоны ON id = Чей телефон
 select persons.person_full_name, phones.phones_phone, phones.phones_comment
 	from gbsqlpractice.persons
-    left join gbsqlpractice.phones
-    on phones_person_id = persons_id;
+	left join gbsqlpractice.phones
+	on phones_person_id = persons_id;
 -- 2. SELECT ФИО, Адрес, Комментарий FROM Люди RIGHT JOIN Адреса ON id = Чей Адрес
 select persons.person_full_name, addresses.addresses_address, addresses.addresses_comment
 	from gbsqlpractice.persons
-    right join gbsqlpractice.addresses
-    on addresses_person_id = persons_id;
+	right join gbsqlpractice.addresses
+	on addresses_person_id = persons_id;
